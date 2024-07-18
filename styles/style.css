@@ -29,6 +29,21 @@
     font-style: italic;
 }
 
+.section-title {
+    color: var(--heading_color);
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    color: var(--desc-color);
+}
+
 #primary-btn {
     background-color: var(--bg-primary);
     color: #fff;
@@ -40,7 +55,7 @@
 /* nav style start */
 .banner-bg {
     height: 100vh;
-    background: linear-gradient(rgb(17, 17, 17), rgba(17, 17, 17, 0.644));
+    background: linear-gradient(rgb(17, 17, 17), rgba(17, 17, 17, 0.966));
 }
 
 nav {
@@ -160,6 +175,43 @@ nav {
 }
 
 
+/* habit section style */
+.habit-section {
+    background-color: rgba(0, 0, 0, 0.932);
+    padding: 80px 0;
+}
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-img {
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid white;
+}
+
+.card-title {
+    color: var(--heading_color);
+    margin: 15px 0 10px 0;
+}
+
+.card-desc {
+    color: var(--desc-color);
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
 
 
 
@@ -169,8 +221,14 @@ nav {
 /* medial query */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    .banner-bg {
-        padding: 0 20px;
+
+    nav{
+        padding-top: 30px;
+    }
+    
+    .banner-bg,
+    .habit-section {
+        padding: 20px;
         height: auto;
     }
 
@@ -179,7 +237,7 @@ nav {
     }
 
     .hamburger {
-        height: 40px;
+        height: 30px;
     }
 
     .banner {
@@ -188,8 +246,13 @@ nav {
         height: auto;
     }
 
+    .card-container {
+        flex-direction: column;
+    }
+
     .left,
-    .right {
+    .right,
+    .section-desc {
         width: 100%;
     }
 
