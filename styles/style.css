@@ -176,7 +176,8 @@ nav {
 
 
 /* habit section style */
-.habit-section {
+.habit-section,
+.extra_mile-section {
     background-color: rgba(0, 0, 0, 0.932);
     padding: 80px 0;
 }
@@ -212,6 +213,45 @@ nav {
 
 
 
+/* extra mile section style */
+
+.mile_section_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.section-text-part {
+    width: 50%;
+}
+
+.extra_mile-section-title {
+    color: var(--heading_color);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.extra_mile-section-title-desc {
+    width: 80%;
+    margin-bottom: 20px;
+    color: var(--desc-color);
+}
+
+.img_container {
+    width: 30%;
+}
+
+.run_img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
 
 
 
@@ -222,12 +262,13 @@ nav {
 /* mobile device */
 @media screen and (max-width: 576px) {
 
-    nav{
+    nav {
         padding-top: 30px;
     }
-    
+
     .banner-bg,
-    .habit-section {
+    .habit-section,
+    .extra_mile-section {
         padding: 20px;
         height: auto;
     }
@@ -246,18 +287,27 @@ nav {
         height: auto;
     }
 
-    .card-container {
+    .card-container,
+    .mile_section_container {
         flex-direction: column;
     }
 
     .left,
     .right,
-    .section-desc {
+    .section-desc,
+    .extra_mile-section-title-desc,
+    .section-text-part,
+    .img_container {
         width: 100%;
     }
 
     .heading {
         font-size: 35px;
+    }
+
+    .join_now {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 
