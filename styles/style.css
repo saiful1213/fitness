@@ -1,0 +1,91 @@
+/* common styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.maximum-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    color: orangered;
+    font-weight: 700;
+    font-size: 45px;
+    font-style: italic;
+}
+
+#primary-btn {
+    background-color: rgba(255, 68, 0, 0.733);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+/* nav style start */
+.banner-bg {
+    height: 100vh;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-top: 50px;
+}
+
+.list-container {
+    display: flex;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    border-radius: 50px;
+    padding: 10px 0;
+}
+
+.list-container li a {
+    text-decoration: none;
+    color: #ffffffb6;
+    margin-right: 35px;
+}
+
+
+
+
+
+/* medial query */
+/* mobile device */
+@media screen and (max-width: 576px) {
+    .banner-bg {
+        padding: 0 20px;
+    }
+
+    .list-container {
+        display: none;
+    }
+
+    .hamburger {
+        height: 40px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* large device */
+@media screen and (min-width: 993px) {
+    .hamburger {
+        display: none;
+    }
+}
